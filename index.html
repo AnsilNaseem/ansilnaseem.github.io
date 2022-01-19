@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>My Portfolio</title>
+	<meta content="Development portfolio of .... " name="description" property="og:description">
+	
+	<!-- Link to the relevant stylesheet -->
+	<link href="style.css" rel="stylesheet">
+	
+  <!--[if lte IE 8]>
+      <link href="dist/css/blockIE.css" rel="stylesheet">
+    <![endif]-->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> <!-- Load JQuery, as our little script depends on it -->
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,600,400" rel="stylesheet" type="text/css"> <!-- Load our font from Google -->
+  <!-- The JS code block has been moved into the index.js file.  -->
+  <script src="./index.js"></script>
+</head>
+
+<body>
+	<!-- This calls the little script written above. -->
+  <div class="preloader"></div>
+  <main>
+
+	<!-- The Intro section begins -->
+  <section class="intro">
+
+		<div class="intro-text"> <!-- Seperates the text section from the arrow. -->
+      <div class="Hi">
+				<h1>Hi! 👋  &mdash; My name is <span>Ansil Naseem</span>, I'm an <span>Engineering Student</span> 👨🏻‍💻 located in Kerala 🌴, India.</h1> <!-- Insert your text here! -->
+      </div>
+    </div>
+    
+	</section>
+	<!-- Intro section ends -->
+	
+	<!--PORTFOLIO PROJECT HERE-->
+  <!-- The portfolio section begins -->
+  <!-- Please note: all of the following images are from Unsplash. I do not own the rights to them, and I have used them according to Unsplash's
+    href="https://www.github.com/ansilnaseem"
+				rules and regulations. All credits go to original owners/photographers.-->
+
+        <section class="projects">
+          <div class="projects-collage">
+      
+            <!-- Project One -->
+            <a class="project-item"  target="_blank">
+              <figure class="project-figure">
+                <div class="project-overlay"></div>
+                <img src="https://i.imgur.com/986nyhu.jpg">
+                <figcaption class="project-text">
+                  <h2>SITE IS</h2>
+                  
+                 <!-- *********************** -->
+                  <!-- START OF HIDDEN ELEMENTS -->
+      
+                  <!--  the next 3 element wouldnt display at first sight. they are for the project's popUp as you'll see 
+                  HINTS: The P tag next
+                  First Anchor tag is for the project's github REPO
+                  Second Anchor is for the project's live preview  -->
+      
+                 
+            <!-- Please don't mind that we have a span with a weird attr. it not displaying so no worries.  -->
+              <span id="githubRepo" href="https://github.com/ansilnaseem"></span>
+              <span id="livePreview" href="https://ansilnaseem.github.io/"></span>
+      
+            <!-- *********************** -->
+            <!-- END OF HIDDEN ELEMENTS -->
+                </figcaption>
+              </figure>
+            </a>
+            <!-- Project One Ends -->
+            
+            <!-- Project Two -->
+            <a class="project-item" target="_blank">
+              <figure class="project-figure">
+                <div class="project-overlay"></div>
+                <img src="https://i.imgur.com/986nyhu.jpg">
+                <figcaption class="project-text">
+                  <h2>Under <P> Development 🚧</h2>
+            
+                  <!-- *********************** -->
+                  <!-- START OF HIDDEN ELEMENTS -->
+      
+                  <!--  the next 3 element wouldnt display at first sight. they are for the project's popUp as you'll see 
+                  HINTS: The P tag next
+                  First Anchor tag is for the project's github REPO
+                  Second Anchor is for the project's live preview  -->
+      
+                 
+            <!-- Please don't mind that we have a span with a weird attr. it not displaying so no worries.  -->
+              <span id="githubRepo" href="https://github.com/jabedford"></span>
+              <span id="livePreview" href="https://codiejay.github.io/dict/"></span>
+      
+            <!-- *********************** -->
+            <!-- END OF HIDDEN ELEMENTS -->
+            </figcaption>
+            </figure>
+            </a>
+            <!-- Project Two Ends -->
+            
+            
+            
+          </div>
+        </section>
+        <!-- Portfolio section ends -->
+	
+	<!-- Contact button section begins -->
+  <div>
+   <h1></p>links👇</h1>
+  </div>
+	
+	<!-- Footer section begins - If you do not want links here, you can change the <li> items to just be <p> tags or whatever you require -->
+  <footer>
+    <div class="wrapper">
+      <ul>
+        <li>
+          <a href="https://www.linkedin.com/in/ansilnaseem" target="_blank">Linkedin</a>
+				</li>
+        <li>
+          <a href="https://youtube.com/channel/UCnvkx3VMgUqXhkAYbPdocWA" target="_blank">YouTube</a>
+        </li>
+        
+        <li>
+          <a href="https://instagram.com/ansilnaseem" target="_blank">Instagram</a>
+        </li>
+        
+				<li>
+						<a href="https://github.com/ansilnaseem" target="_blank">GitHub</a>
+					</li>
+      </ul>
+    </div>
+	</footer>
+	<!-- Footer section ends -->
+  <!--This section would ONLY appear when an individual project 'box' is clicked, It gives more detail about the project. it contains-- IMAGE OF THE PROJECT, THE PROJECT'S NAME, THE PROJECT FULL DESCRIPTION, GITHUB LINK && PREVIEW LINK -->
+  <div class="popUp">
+    <div class="popUpImg"></div>
+    <div id="popUpText">
+      <h1>Project's Name</h1>
+      <p class="projectDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus non ipsum itaque ratione dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus non ipsum itaque ratione dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <div>
+        <a href="" id="githubLink"></a>
+        <a href="" id="previewLink"></a>
+      </div>
+
+    </div>
+    <span id="cancelBtn">X</span>
+  </div>
+
+  </main>
+  
+</body>
+
+
+</html>
